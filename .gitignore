@@ -1,62 +1,60 @@
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## User settings
-xcuserdata/
-
-## Obj-C/Swift specific
+#####
+.DS_Store
+*.swp
+profile
+# OS X temporary files that should never be committed
+#####
+# DotEnv files
+.env
+####
+*~.nib
+# Xcode temporary files that should never be committed
+####
+# Objective-C/Swift specific
 *.hmap
-
-## App packaging
 *.ipa
-*.dSYM.zip
-*.dSYM
-
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
-
-.build/
-
+####
+# Xcode build files
+DerivedData/
+build/
+Builds/
+#####
+# Xcode private settings (window sizes, bookmarks, breakpoints,
+custom executables, smart groups)
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+xcuserdata/
+####
+# Other Xcode files
+profile
+*.hmap
+*.ipa
+####
 # CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build/
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
+Pods/
+!Podfile
+!Podfile.lock
+####
+# Gem
+!Gemfile.lock
+# Example Projects
+Example/.DS_Store
+Example/build/
+Example/DerivedData/
+Example/*.xcworkspace
+Example/xcuserdata/
+Example/*.xcuserstate
+Example/Pods/
+Example/Podfile.lock
+Example/*.hmap
+Example/*.ipa
+Example/*.dSYM.zip
+Example/*.dSYM
+Example/*.tmp
+Example/*.log
